@@ -3933,41 +3933,55 @@ input, select, textarea {
 		  margin: 10px 0;
 		}
 	  
+	 @media (max-width: 768px) {
+		.navbar {
+		  padding: 10px;
+		}
+		
+		ul.navbar-menu {
+		  flex-direction: row;
+		  align-items: center;
+		}
+		
+		ul.navbar-menu li {
+		  margin: 10px 0;
+		}
+	}
 	  @media (max-width: 768px) {
 		.navbar {
 		  padding: 10px;
 		}
 		
 		ul.navbar-menu {
-		  flex-direction: column;
+		  flex-direction: row;
 		  align-items: center;
 		}
 		
 		ul.navbar-menu li {
 		  margin: 10px 0;
 		}
-	  }
+	}
 	  @media and (max-width: 768px) {
 		.navbar {
 		  padding: 10px;
 		}
 		
 		ul.navbar-menu {
-		  flex-direction: column;
+		  flex-direction: row;
 		  align-items: center;
 		}
 		
 		ul.navbar-menu li {
 		  margin: 10px 0;
 		}
-	  }
+	}
 	  @media screen and (max-width: 1280px) {
 		.navbar {
 			padding: 10px;
 		  }
 		  
 		  ul.navbar-menu {
-			flex-direction: column;
+			flex-direction: row;
 			align-items: center;
 		  }
 		  
@@ -3975,21 +3989,21 @@ input, select, textarea {
 			margin: 10px 0;
 
 	  }
-	}
+	
 	  @media screen and (max-width: 360px) {
 		.navbar {
 			padding: 10px;
 		  }
 		  
 		  ul.navbar-menu {
-			flex-direction: column;
+			flex-direction: row;
 			align-items: center;
 		  }
 		  
 		  ul.navbar-menu li {
 			margin: 10px 0;
 	}
-}
+	  }
 
 @media screen and (max-width: 1152px) {
 	.navbar {
@@ -3997,7 +4011,7 @@ input, select, textarea {
 	  }
 	  
 	  ul.navbar-menu {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 	  }
 	  
@@ -4012,7 +4026,7 @@ input, select, textarea {
 	  }
 	  
 	  ul.navbar-menu {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 	  }
 	  
@@ -4021,5 +4035,27 @@ input, select, textarea {
 }
 
 }
+/* Navbar styles for screens smaller than 600px (iPhone size) */
+@media (max-width: 600px) {
+	.navbar {
+	  padding: 10px;
+	}
+	
+	ul.navbar-menu {
+	  flex-direction: row;
+	  align-items: center;
+	  margin-top: 10px;
+	}
+	
+	ul.navbar-menu li {
+	  margin: 5px 0;
+	}
+	
+	ul.navbar-menu a {
+	  font-size: 14px;
+	}
+  }
+  
 	  }
+	  
 	  
